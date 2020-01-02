@@ -5,7 +5,7 @@
       <el-container>
         <el-aside width="240px">
           <el-col :span="24" style="height:900px;text-align: left;">
-            <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose">
+            <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" router unique-opened>
               <el-submenu index="1">
                 <template slot="title">
                   <i class="el-icon-location"></i>

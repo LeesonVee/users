@@ -6,6 +6,9 @@ import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import VueResource from 'vue-resource';
+import 'normalize.css'
+import store from './store'
+
 Vue.use(ElementUI);
 Vue.use(VueResource);
 
@@ -17,8 +20,7 @@ Vue.http.options.headers = {
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
   router,
-  components: { App },
-  template: '<App/>'
-})
+  store,
+  render: h => h(App)
+}).$mount('#app');

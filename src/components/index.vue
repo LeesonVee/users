@@ -57,7 +57,7 @@
                   let body = result.body;
                   if(body.data){
                     me.myMessage('success','验证成功');
-                    me.$router.push({path:'/Main'})
+                    me.$router.push({path:'/Main2'})
                   }else{
                     me.myMessage('error','验证失败')
                   }
