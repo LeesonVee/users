@@ -3,37 +3,61 @@ const base = 'Home'
 export default [{
   name: 'basic',
   meta: {
-    title: '基本',
+    title: '应用域管理',
     icon: 'fa fa-camera-retro'
   },
   sub: [{
-    name: 'BasicLayout',
+    name: 'Domain',
     meta: {
-      index: `/Home/BasicLayout`,
-      title: '基本布局',
+      index: `/Home/Domain`,
+      title: '域注册',
       type: 'menu',
       active: false
     }
   }, {
-    name: 'BasicContainer',
+    name: 'RolesManage',
     meta: {
-      index: `/Home/BasicContainer`,
-      title: '基本容器',
+      index: `/Home/RolesManage`,
+      title: '角色注册',
+      type: 'menu',
+      active: false
+    }
+  }, {
+    name: 'MenusContainer',
+    meta: {
+      index: `/Home/MenusContainer`,
+      title: '菜单绑定',
       type: 'menu',
       active: false
     }
   }]
 }, {
-  name: 'Form',
+  name: 'regist',
   meta: {
-    title: '表单',
+    title: '注册管理',
     icon: 'fa fa-bandcamp'
   },
   sub: [{
-    name: 'FormRadio',
+    name: 'SysOrgan',
     meta: {
-      index: `/Home/FormRadio`,
-      title: '单选按钮',
+      index: `/Home/SysOrgan`,
+      title: '机构注册',
+      type: 'menu',
+      active: false
+    }
+  },{
+    name: 'SysPersonnel',
+    meta: {
+      index: `/Home/SysPersonnel`,
+      title: '人员注册',
+      type: 'menu',
+      active: false
+    }
+  },{
+    name: 'BaseUser',
+    meta: {
+      index: `/Home/BaseUser`,
+      title: '用户注册',
       type: 'menu',
       active: false
     }

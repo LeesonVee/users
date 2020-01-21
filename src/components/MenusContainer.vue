@@ -14,13 +14,13 @@
                 <el-input v-model="queryMenuForm.menuCode"></el-input>
               </el-form-item>
             </el-col>
-           <el-col :span="4">
-             <el-form-item label="角色">
-               <el-select v-model="queryMenuForm.outRoleId" placeholder="请选择">
-                 <el-option v-for="item in rolesOptions" :key="item.id" :label="item.label" :value="item.value"></el-option>
-               </el-select>
-             </el-form-item>
-           </el-col>
+            <el-col :span="4">
+              <el-form-item label="角色">
+                <el-select v-model="queryMenuForm.outRoleId" placeholder="请选择">
+                  <el-option v-for="item in rolesOptions" :key="item.id" :label="item.label" :value="item.value"></el-option>
+                </el-select>
+              </el-form-item>
+            </el-col>
             <el-col :span="1">&nbsp;</el-col>
             <el-col :span="11">
               <el-button type="primary"  icon="el-icon-search" @click="doQuery" size="small">查询</el-button>
@@ -73,7 +73,7 @@
 
 <script>
   export default {
-    name: 'BasicContainer',
+    name: 'MenusContainer',
     data() {
       return {
         dialogTitle:'新增',
