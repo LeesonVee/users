@@ -61,5 +61,27 @@ export default [{
       type: 'menu',
       active: false
     }
+  },{
+    name: 'CenterKey',
+    meta: {
+      index: `/Home/CenterKey`,
+      title: '平台密钥',
+      type: 'menu',
+      active: false
+    }
   }]
-}]
+}, {
+  name: 'binding',
+  meta: {
+    title: '配置管理',
+    icon: 'fa fa-bandcamp'
+  },
+  sub: [{
+    name: 'UsersBind',
+    meta: {
+      index: `/Home/UsersBind`,
+      title: '用户绑定',
+      type: 'menu',
+      active: false
+    }
+  }]}]
