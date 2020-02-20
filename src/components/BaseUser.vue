@@ -191,6 +191,7 @@
 
 <script>
   import {getGenderOptions,getStatusOptions} from '@/assets/js/dic.js';
+  import {hex_md5} from '@/assets/js/md5.js';
   import SelectTree from './treeSelect';
   export default {
     name: "BaseUser",
@@ -497,7 +498,7 @@
             let baseUser = {
               id:this.userForm.id,
               name:this.userForm.personName,
-              password:this.userForm.password,
+              password:hex_md5(this.userForm.password),
               status:this.userForm.status,
               createdt:this.userForm.createdt||null,
               personId:this.userForm.personId
